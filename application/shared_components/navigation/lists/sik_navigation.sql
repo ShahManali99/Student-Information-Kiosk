@@ -1,0 +1,101 @@
+prompt --application/shared_components/navigation/lists/sik_navigation
+begin
+--   Manifest
+--     LIST: SIK Navigation
+--   Manifest End
+wwv_flow_api.component_begin (
+ p_version_yyyy_mm_dd=>'2021.04.15'
+,p_release=>'21.1.0'
+,p_default_workspace_id=>5563191275573624319
+,p_default_application_id=>80528
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_TEST99'
+);
+wwv_flow_api.create_list(
+ p_id=>wwv_flow_api.id(7558242022012482229)
+,p_name=>'SIK Navigation'
+,p_list_status=>'PUBLIC'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(7558242203023482230)
+,p_list_item_display_sequence=>10
+,p_list_item_link_text=>'Home'
+,p_list_item_link_target=>'f?p=&APP_ID.:1:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-home'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(7558242664708482231)
+,p_list_item_display_sequence=>20
+,p_list_item_link_text=>'About'
+,p_list_item_link_target=>'f?p=&APP_ID.:10060:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-at'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(7558243051177482231)
+,p_list_item_display_sequence=>30
+,p_list_item_link_text=>'Users'
+,p_list_item_link_target=>'f?p=&APP_ID.:26:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-user-circle'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(7558243437215482232)
+,p_list_item_display_sequence=>40
+,p_list_item_link_text=>'Campuses'
+,p_list_item_link_target=>'f?p=&APP_ID.:31:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-map-pin'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(7558243884457482232)
+,p_list_item_display_sequence=>50
+,p_list_item_link_text=>'Courses'
+,p_list_item_link_target=>'f?p=&APP_ID.:39:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-book'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(7558646397383495617)
+,p_list_item_display_sequence=>60
+,p_list_item_link_text=>'Events'
+,p_list_item_link_target=>'f?p=&APP_ID.:4:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-users-alt'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(7559032308385498081)
+,p_list_item_display_sequence=>70
+,p_list_item_link_text=>'Services'
+,p_list_item_link_target=>'f?p=&APP_ID.:3:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-media-list'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(7559307557710502993)
+,p_list_item_display_sequence=>80
+,p_list_item_link_text=>'Service Providers'
+,p_list_item_link_target=>'f?p=&APP_ID.:29:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-signing'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(7559318027666507136)
+,p_list_item_display_sequence=>90
+,p_list_item_link_text=>'Student Societies'
+,p_list_item_link_target=>'f?p=&APP_ID.:14:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-user-graduate'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(7559627917580509645)
+,p_list_item_display_sequence=>100
+,p_list_item_link_text=>'Administration'
+,p_list_item_link_target=>'f?p=&APP_ID.:10000:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-user-lock'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_api.component_end;
+end;
+/

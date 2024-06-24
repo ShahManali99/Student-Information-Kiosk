@@ -1,0 +1,242 @@
+prompt --application/pages/page_00031
+begin
+--   Manifest
+--     PAGE: 00031
+--   Manifest End
+wwv_flow_api.component_begin (
+ p_version_yyyy_mm_dd=>'2021.04.15'
+,p_release=>'21.1.0'
+,p_default_workspace_id=>5563191275573624319
+,p_default_application_id=>80528
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_TEST99'
+);
+wwv_flow_api.create_page(
+ p_id=>31
+,p_user_interface_id=>wwv_flow_api.id(5725100070607402811)
+,p_name=>'Campuses'
+,p_alias=>'CAMPUSES'
+,p_step_title=>'Campuses'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_last_updated_by=>'MANALISHAH2899@GMAIL.COM'
+,p_last_upd_yyyymmddhh24miss=>'20210524104932'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(7487760982200193310)
+,p_plug_name=>'Breadcrumb'
+,p_region_template_options=>'#DEFAULT#:t-BreadcrumbRegion--useBreadcrumbTitle'
+,p_component_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_api.id(5725019688956402771)
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_menu_id=>wwv_flow_api.id(5724952597776402738)
+,p_plug_source_type=>'NATIVE_BREADCRUMB'
+,p_menu_template_id=>wwv_flow_api.id(5725076824409402799)
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488360877266239304)
+,p_name=>'P31_NEW'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<h1>LUTON CAMPUS</h1>',
+'<h2><a href= "https://www.beds.ac.uk/about-us/campuses/luton/"> About Luton Campus on the University of Bedfordshire''s Website</a><h2>'))
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'Y'
+,p_attribute_05=>'HTML'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488360900859239305)
+,p_name=>'LUTON_CAMPUS'
+,p_item_sequence=>20
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>'#APP_IMAGES#about-us-thumbnail-luton2.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_tag_css_classes=>'width: 50px;'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_css_classes=>'img-width:150px;'
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'URL'
+,p_attribute_02=>'Luton Campus'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488361086662239306)
+,p_name=>'P31_NEW_2'
+,p_item_sequence=>30
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>'<H3><a href="f?p=&APP_ID.:35:&SESSION.">Visit the Luton Campus Page!</a></h3>'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'Y'
+,p_attribute_05=>'HTML'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488361158763239307)
+,p_name=>'P31_NEW_3'
+,p_item_sequence=>40
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<h1>BEDFORD CAMPUS</h1>',
+'<h2><a href= "https://www.beds.ac.uk/about-us/campuses/bedford/"> About Bedford Campus on the University of Bedfordshire''s Website</a></h2>'))
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'Y'
+,p_attribute_05=>'HTML'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488361222429239308)
+,p_name=>'BEDFORD_CAMPUS'
+,p_item_sequence=>50
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>'#APP_IMAGES#about-us-thumbnail-bedford2.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_field_template=>wwv_flow_api.id(5725072811466402797)
+,p_item_template_options=>'t-Form-fieldContainer--large'
+,p_attribute_01=>'URL'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488363192149239327)
+,p_name=>'P31_NEW_1'
+,p_item_sequence=>60
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>'<H3><a href="f?p=&APP_ID.:37:&SESSION.">Visit the Bedord Campus Page!</a></h3>'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'Y'
+,p_attribute_05=>'HTML'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488363249836239328)
+,p_name=>'P31_NEW_4'
+,p_item_sequence=>70
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<h1>MILTON KEYNES CAMPUS</h1>',
+'<h2><a href= "https://www.beds.ac.uk/about-us/campuses/milton-keynes/"> About Milton Keyne Campus on the University of Bedfordshire''s Website</a></h2>'))
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'Y'
+,p_attribute_05=>'HTML'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488363355497239329)
+,p_name=>'MILTON_KEYNES'
+,p_item_sequence=>80
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>'#APP_IMAGES#mk-campus-entrance2.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'URL'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488363454954239330)
+,p_name=>'P31_NEW_5'
+,p_item_sequence=>90
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>'<H3><a href="f?p=&APP_ID.:36:&SESSION.">Visit the Milton Keynes Campus Page!</a></h3>'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'Y'
+,p_attribute_05=>'HTML'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488363589603239331)
+,p_name=>'P31_NEW_6'
+,p_item_sequence=>100
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<h1>PUTTERIDGE BURY CAMPUS</h1>',
+'<h2><a href= "https://www.beds.ac.uk/about-us/campuses/putteridge-bury/"> About Putteridge Bury Campus on the University of Bedfordshire''s Website</a><h2.'))
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'Y'
+,p_attribute_05=>'HTML'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488363655864239332)
+,p_name=>'PUTTERIDGE_BURY'
+,p_item_sequence=>110
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>'#APP_IMAGES#about-us-putteridge-bury-thumbnail2.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'URL'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488363780742239333)
+,p_name=>'P31_NEW_7'
+,p_item_sequence=>120
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>'<H3><a href="f?p=&APP_ID.:38:&SESSION.">Visit the Putteridge Bury Campus Page!</a></h3>'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'Y'
+,p_attribute_05=>'HTML'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488363862624239334)
+,p_name=>'P31_NEW_8'
+,p_item_sequence=>130
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<h1>AYLESBURY CAMPUS</h1>',
+'<h2><a href= "https://www.beds.ac.uk/about-us/campuses/aylesbury/"> About Aylesbury Campus on the University of Bedfordshire''s Website</a></h2>'))
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'Y'
+,p_attribute_05=>'HTML'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488363938319239335)
+,p_name=>'AYLESBURY_CAMPUS'
+,p_item_sequence=>140
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>'#APP_IMAGES#about-us-thumbnail-aylesbury2.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'URL'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(7488364097032239336)
+,p_name=>'P31_NEW_10'
+,p_item_sequence=>150
+,p_item_plug_id=>wwv_flow_api.id(7487760982200193310)
+,p_source=>'<H3><a href="f?p=&APP_ID.:33:&SESSION.">Visit the Aylesbury Campus Page!</a></h3>'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_field_template=>wwv_flow_api.id(5725072917043402797)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'Y'
+,p_attribute_05=>'HTML'
+);
+wwv_flow_api.component_end;
+end;
+/
